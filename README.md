@@ -122,7 +122,7 @@ the effect of this mechanic will be that the player can jump over gaps
 
 > Identify a section of your code that demonstrates **functional player input**. Paste it in the code block below and explain what it does.
 
-**File:** `Assets/Scripts/[YourScriptName].cs` &nbsp;|&nbsp; **Lines:** `[e.g. 24–41]`
+**File:** Assets/Scripts/PlayerMovement.cs
 
 **What it does:**
 *It moves the character using wasd. It does not jump or sprint or have gravity yet and i need to figure out how to use inertia*
