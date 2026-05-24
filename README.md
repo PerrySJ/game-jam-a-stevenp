@@ -107,11 +107,11 @@ the effect of this mechanic will be that the player can jump over gaps
 > Upload **two screenshots** showing a **before and after** of the player performing an action or using a mechanic. Replace the placeholder text below with your actual images.
 
 ### Before
-![Before Screenshot](screenshots/before.png)
+![Before Screenshot](Screenshots/before.png)
 *Caption: Describe what is happening before the action (e.g., "Player approaching the jump pad").*
 
 ### After
-![After Screenshot](screenshots/after.png)
+![After Screenshot](Screenshots/after.png)
 *Caption: Describe what is happening after the action (e.g., "Player launched into the air after touching the jump pad").*
 
 > Place your screenshots in a `/screenshots` folder in your repository and update the file names above to match.
