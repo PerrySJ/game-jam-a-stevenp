@@ -125,12 +125,25 @@ the effect of this mechanic will be that the player can jump over gaps
 **File:** `Assets/Scripts/[YourScriptName].cs` &nbsp;|&nbsp; **Lines:** `[e.g. 24–41]`
 
 **What it does:**
-*Briefly explain what this code does and how it responds to player input.*
+*It moves the character using wasd. It does not jump or sprint or have gravity yet and i need to figure out how to use inertia*
 
 ```csharp
-// Paste your code snippet here
+using UnityEngine;
+
+public class PlayerMovement : MonoBehaviour {
+    public CharacterController controller;
+    public float speed = 12f;
+
+    void Update() {
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
+
+        Vector3 move = transform.right * x + transform.forward * z;
+
+      
+        controller.Move(move * speed * Time.deltaTime);
+    }
+}
 
 
----
-
-*README last updated: [Date]*
+*README last updated: [24May2026]*
