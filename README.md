@@ -7,9 +7,8 @@
 
 | Name |
 |------|
-| Member 1 — *[Full Name]* |
-| Member 2 — *[Full Name] (optional)* |
-| Member 3 — *[Full Name] (optional)* |
+| Member 1 — Steven Perry |
+
 
 > Groups must have between **1 and 3 members**. Remove unused rows.
 
@@ -17,26 +16,26 @@
 
 ## Game Mechanics
 
-### Mechanic 1 — *[Name]*
-*Describe something the player can do, something the player can interact with, or a rule the game enforces*
+### Mechanic 1 — Roll
+The player will be able to control the ball on the screen and roll it any direction with the goal of collecting coins without falling off of the platform
 
-*Describe how the game reacts or responds*
+The game will react by moving the ball with inertia and gravity in the direction the player is telling it to move
 
-*Describe the effects of this mechanic on the player*
+This mechanic will move the ball, which is essentially the player
 
-### Mechanic 2 — *[Name]*
-*Describe something the player can do, something the player can interact with, or a rule the game enforces*
+### Mechanic 2 — Collection
+The player can move the ball into the coins to collect them and increase their score
 
-*Describe how the game reacts or responds*
+The game will respond by deleting the coin collected from the screen, and giving the player points
 
-*Describe the effects of this mechanic on the player*
+The effect of this mechanic will be that the player will increase score
 
-### Mechanic 3 — *[Name]*
-*Describe something the player can do, something the player can interact with, or a rule the game enforces*
+### Mechanic 3 — Jumping
+The player will be able to jump with the ball to cross gaps in the map
 
-*Describe how the game reacts or responds*
+The game will react by launching the ball (player) into the air
 
-*Describe the effects of this mechanic on the player*
+the effect of this mechanic will be that the player can jump over gaps
 
 <!-- Game Jam B: Uncomment and complete the two additional mechanics below -->
 <!--
@@ -61,8 +60,8 @@
 
 | # | UI Element | Purpose |
 |---|------------|---------|
-| 1 | *[e.g. Health Bar]* | *[e.g. Displays the player's current health]* |
-| 2 | *[e.g. Score Counter]* | *[e.g. Tracks and displays the player's current score]* |
+| 1 | Score Counter | tracks how many coins the player has collected
+| 2 | Timer  | Tracks how long the player has been playing for
 
 ---
 
@@ -70,19 +69,19 @@
 
 *Provide a brief overview of the core loop — what does the player do moment to moment?*
 
-> *Example: "The player navigates procedurally generated rooms, defeating enemies to collect keys that unlock the next floor, while managing a limited health pool."*
+> the player will control the ball to collect coins without falling off of the platform. the player will have to navigate obstacles along the way
 
 ---
 
 ### How to Win
 
-1. *[Describe the one win condition — what must the player achieve to win?]*
+1. The player wins once they have reached a score of 50 coins collected.
 
 ---
 
 ### How to Lose
 
-1. *[Describe lose condition #1 — what causes the player to fail?]*
+1. The player will lose if they fall off of the platform
 
 <!-- Game Jam B: Uncomment and complete the second lose condition below -->
 <!--
@@ -95,11 +94,11 @@
 
 *Before you begin building, identify **3 challenges** you expect to encounter during development.*
 
-1. **[Challenge Title]** — *Describe the challenge and why you think it will be difficult.*
+1. **[Language Barrier]** — *I have only taken cs1180 before this class, the only language i know is java and i still consider myself a novice, i will have to learn c# for this class and become profecient in it to succeed*
 
-2. **[Challenge Title]** — *Describe the challenge and why you think it will be difficult.*
+2. **[Timer]** — *I think it will be hard to implement a timer UI as well as the code to get it to accurately track time*
 
-3. **[Challenge Title]** — *Describe the challenge and why you think it will be difficult.*
+3. **[Level building]** — *I think i will run into personal issues with level building and the creative process required to develop levels*
 
 ---
 
@@ -130,18 +129,7 @@
 
 ```csharp
 // Paste your code snippet here
-// Example:
-void Update()
-{
-    float moveInput = Input.GetAxis("Horizontal");
-    rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
 
-    if (Input.GetButtonDown("Jump") && isGrounded)
-    {
-        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-    }
-}
-```
 
 ---
 
